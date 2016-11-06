@@ -10,7 +10,7 @@ class TweetSearchAPI < Sinatra::Base
   Econfig.env = settings.environment.to_s
   Econfig.root = settings.root
 
-  TweetSearch::TwitterClient.config = { access_token: config.access_token }
+  ENV['access_token'] = config.access_token
 
   API_VER = 'api/v0.1'.freeze
 

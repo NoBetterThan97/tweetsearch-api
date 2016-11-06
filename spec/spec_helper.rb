@@ -9,11 +9,13 @@ require 'webmock'
 
 require_relative '../app'
 
+include Rack::Test::Methods
+
 def app
   TweetSearchAPI
 end
 
-CASSETTES_FOLDER = 'spec/support/cassettes'
+CASSETTES_FOLDER = 'spec/support/cassettes'.freeze
 TAGS = ['#food', '#yum'].freeze
 
 VCR.configure do |config|
