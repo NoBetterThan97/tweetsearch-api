@@ -15,7 +15,7 @@ def app
   TweetSearchAPI
 end
 
-CASSETTES_FOLDER = 'spec/support/cassettes'.freeze
+CASSETTES_FOLDER = 'spec/support/cassettes'
 TAGS = ['#food', '#yum'].freeze
 
 VCR.configure do |config|

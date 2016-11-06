@@ -10,9 +10,9 @@ class TweetSearchAPI < Sinatra::Base
   Econfig.env = settings.environment.to_s
   Econfig.root = settings.root
 
-  ENV['access_token'] = config.access_token
+  TweetSearch::TwitterClient.config.update(access_token: config.access_token)
 
-  API_VER = 'api/v0.1'.freeze
+  API_VER = 'api/v0.1'
 
   get '/?' do
     "TweetSearchAPI latest version endpoints are at: /#{API_VER}/"
