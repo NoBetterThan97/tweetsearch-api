@@ -18,9 +18,9 @@ class TweetSearchAPI < Sinatra::Base
     "TweetSearchAPI latest version endpoints are at: /#{API_VER}/"
   end
 
-  get "/#{API_VER}/tweetsearch/:tags/?" do
-    tags = params[:tags]
+  get "/#{API_VER}/tweets/:tags/?" do
     begin
+      tags = params[:tags].split(',').map { |tag| "##{tag}" }
       tweets = TweetSearch::Tweet.search(tags)
 
       content_type 'application/json'
