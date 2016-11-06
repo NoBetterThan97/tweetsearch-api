@@ -4,7 +4,7 @@
   "repository": "https://github.com/NoBetterThan97/tweetsearch-api",
   "keywords": ["twitter", "api"],
   "env": {
-    "access_token": {
+    "ACCESS_TOKEN": {
       "description": "access token for Twitter API",
       "required": true
     }
