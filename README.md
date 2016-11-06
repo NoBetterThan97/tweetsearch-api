@@ -2,6 +2,8 @@
 
 The api for tweetsearch gem
 
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
 ## Spin Up Server
 
 ```bash

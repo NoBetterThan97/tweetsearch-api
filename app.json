@@ -1,0 +1,12 @@
+{
+  "name": "TweetSearch API",
+  "description": "Search Tweet",
+  "repository": "https://github.com/NoBetterThan97/tweetsearch-api",
+  "keywords": ["twitter", "api"],
+  "env": {
+    "access_token": {
+      "description": "access token for Twitter API",
+      "required": true
+    }
+  }
+}
