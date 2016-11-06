@@ -14,9 +14,12 @@ include Rack::Test::Methods
 def app
   TweetSearchAPI
 end
-
+API_VER = 'api/v0.1'
 CASSETTES_FOLDER = 'spec/support/cassettes'
+TWEET_CASSETTE = 'tweet'
 TAGS = ['#food', '#yum'].freeze
+SAD_TWEET_TAG = 'nohash'.freeze
+HAPPY_TWEET_TAG = '#withhash'.freeze
 
 VCR.configure do |config|
   config.cassette_library_dir = CASSETTES_FOLDER
