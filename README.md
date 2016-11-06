@@ -1,6 +1,6 @@
 # tweetsearch-api
 
-![Codeship](https://codeship.com/projects/YOUR_PROJECT_UUID/status?branch=master)
+![Codeship](https://codeship.com/projects/f0d12760-8607-0134-46d0-32b72484031c/status?branch=master)
 
 The api for tweetsearch gem
 
