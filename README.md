@@ -2,7 +2,7 @@
 
 The api for tweetsearch gem
 
-## Spin up server
+## Spin Up Server
 
 ```bash
 bundle exec puma
