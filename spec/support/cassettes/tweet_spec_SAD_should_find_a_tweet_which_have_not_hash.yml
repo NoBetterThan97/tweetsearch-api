@@ -1,0 +1,69 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/search/tweets.json?q=%23aeneannectortorfelisDuisegestasantesedduiposuereplacerat
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer AAAAAAAAAAAAAAAAAAAAAJrbxQAAAAAAvHij7YJF1CzRHJ2OsD6touWHhko%3DwJw6AF29nhXTSFyc84354rnRqpcI8pmA7JlyALsxq510S5gqJq
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache, no-store, must-revalidate, pre-check=0, post-check=0
+      Content-Disposition:
+      - attachment; filename=json.json
+      Content-Length:
+      - '357'
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Mon, 07 Nov 2016 01:39:38 GMT
+      Expires:
+      - Tue, 31 Mar 1981 05:00:00 GMT
+      Last-Modified:
+      - Mon, 07 Nov 2016 01:39:38 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - tsa_a
+      Set-Cookie:
+      - guest_id=v1%3A147848277805816731; Domain=.twitter.com; Path=/; Expires=Wed,
+        07-Nov-2018 01:39:38 UTC
+      Status:
+      - 200 OK
+      Strict-Transport-Security:
+      - max-age=631138519
+      X-Access-Level:
+      - read
+      X-Connection-Hash:
+      - e46e8ecc934f837c5b264597a80c5ef3
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Rate-Limit-Limit:
+      - '450'
+      X-Rate-Limit-Remaining:
+      - '440'
+      X-Rate-Limit-Reset:
+      - '1478483267'
+      X-Response-Time:
+      - '23'
+      X-Transaction:
+      - 005c8a3800581a9d
+      X-Twitter-Response-Tags:
+      - BouncerCompliant
+      X-Xss-Protection:
+      - 1; mode=block
+    body:
+      encoding: UTF-8
+      string: '{"statuses":[],"search_metadata":{"completed_in":0.013,"max_id":795440453302845440,"max_id_str":"795440453302845440","query":"%23aeneannectortorfelisDuisegestasantesedduiposuereplacerat","refresh_url":"?since_id=795440453302845440&q=%23aeneannectortorfelisDuisegestasantesedduiposuereplacerat&include_entities=1","count":15,"since_id":0,"since_id_str":"0"}}'
+    http_version: 
+  recorded_at: Mon, 07 Nov 2016 01:39:38 GMT
+recorded_with: VCR 3.0.3
