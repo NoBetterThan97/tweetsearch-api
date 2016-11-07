@@ -16,7 +16,8 @@ def app
 end
 
 CASSETTES_FOLDER = 'spec/support/cassettes'
-TAGS = ['#food', '#yum'].freeze
+SAD_TWEET_TAG = 'aeneannectortorfelisDuisegestasantesedduiposuereplacerat'
+HAPPY_TWEET_TAG = 'food'
 
 VCR.configure do |config|
   config.cassette_library_dir = CASSETTES_FOLDER
