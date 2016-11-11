@@ -6,7 +6,7 @@ Sequel.migration do
     create_table(:tweets) do
       primary_key :id
       String :tweet_id
-      String :create_time
+      DateTime :created_at
       String :text
     end
   end
