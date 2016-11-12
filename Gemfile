@@ -17,15 +17,28 @@ group :develop, :test do
 end
 
 group :test do
-  gem 'hirb'
-
   gem 'minitest'
   gem 'minitest-rg'
 
   gem 'rack-test'
   gem 'rake'
-  gem 'rerun'
-
+  
   gem 'vcr'
   gem 'webmock'
+end
+
+group :development do
+  gem 'rerun'
+
+  gem 'flog'
+  gem 'flay'
+end
+
+group :development, :production do
+  gem 'tux'
+  gem 'hirb'
+end
+
+group :production do
+  gem 'pg'
 end

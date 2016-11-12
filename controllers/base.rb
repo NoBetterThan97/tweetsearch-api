@@ -1,11 +1,12 @@
 # frozen_string_literal: true
-
+require 'sinatra'
+require 'econfig'
 # configure based on environment
 class TweetSearchAPI < Sinatra::Base
 extend Econfig::Shortcut
 
 Econfig.env = settings.environment.to_s
-Econfig.root = settings.root
+Econfig.root = File.expand_path('..', settings.root)
 
 TweetSearch::TwitterClient.config.update(access_token: config.access_token)
 
