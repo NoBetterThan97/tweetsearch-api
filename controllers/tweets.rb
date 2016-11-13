@@ -17,4 +17,28 @@ class TweetSearchAPI < Sinatra::Base
       halt 404, "There is no tweet with hashtag #{tags}"
     end
   end
+
+  get "/#{API_VER}/tweets/:id/?" do
+    tweet_id = params[:id]
+    begin
+      tweet = Tweets.find(id: tweet_id)
+
+      content_type 'application/json'
+      { id: tweet.id, text: tweet.text }.to_json
+    rescue
+      content_type 'text/plain'
+      halt 404, "Tweet id (id: #{tweet_id}) not found"
+    end
+  end
+
+
+  post "/#{API_VER}/tweets/?" do
+    tweet_id = params['tweet_id']
+    created_at = params['created_at']
+    text = params['text']
+    new_tweet = Tweets.create(tweet_id: tweet_id, created_at: created_at, text: text)
+
+  end
+
+
 end
