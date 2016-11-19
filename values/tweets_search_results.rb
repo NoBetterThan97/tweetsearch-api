@@ -1,3 +1,3 @@
 # frozen_string_literal: true
 
-TweetsSearchResults = Struct.new :search_terms_used, :tags, :id, :text
+TweetsSearchResults = Struct.new :search_terms_used, :tags, :tweets
