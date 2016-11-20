@@ -11,6 +11,12 @@ gem 'econfig'
 gem 'sequel'
 gem 'tweetsearch'
 
+gem 'roar'
+gem 'multi_json'
+gem 'dry-monads'
+gem 'dry-container'
+gem 'dry-transaction'
+
 group :develop, :test do
   gem 'pry-byebug'
   gem 'sqlite3'
@@ -22,7 +28,7 @@ group :test do
 
   gem 'rack-test'
   gem 'rake'
-  
+
   gem 'vcr'
   gem 'webmock'
 end
